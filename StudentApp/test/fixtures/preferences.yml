@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  course_taken: MyString
+  description: MyString
+  grade: MyString
+  student_id: 1
+  grading_preference: false
+
+two:
+  course_taken: MyString
+  description: MyString
+  grade: MyString
+  student_id: 1
+  grading_preference: false

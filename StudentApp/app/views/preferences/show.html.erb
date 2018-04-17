@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course taken:</strong>
+  <%= @preference.course_taken %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @preference.description %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @preference.grade %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @preference.student_id %>
+</p>
+
+<p>
+  <strong>Grading preference:</strong>
+  <%= @preference.grading_preference %>
+</p>
+
+<%= link_to 'Edit', edit_preference_path(@preference) %> |
+<%= link_to 'Back', preferences_path %>

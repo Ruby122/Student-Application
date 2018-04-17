@@ -1,0 +1,42 @@
+<%= form_with(model: preference, local: true) do |form| %>
+  <% if preference.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(preference.errors.count, "error") %> prohibited this preference from being saved:</h2>
+
+      <ul>
+      <% preference.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :course_taken %>
+    <%= form.text_field :course_taken, id: :preference_course_taken %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :preference_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grade %>
+    <%= form.text_field :grade, id: :preference_grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.number_field :student_id, id: :preference_student_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grading_preference %>
+    <%= form.check_box :grading_preference, id: :preference_grading_preference %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
